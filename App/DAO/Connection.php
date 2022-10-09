@@ -5,7 +5,7 @@
     const DBHOST = "localhost";
     const DBNAME = "dbparque";
     const DBUSER = "root";
-    const DBPASS = '12345';
+    const DBPASS = '';
 
     class Connection {
 

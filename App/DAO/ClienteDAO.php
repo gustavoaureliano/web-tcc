@@ -120,7 +120,7 @@
 
         }
 
-        public function setFoto($foto, $idCliente) {
+        public function setFotoCliente($foto, $idCliente) {
             try {
                 $sql = "update tblcliente set Foto = :foto where idCliente = :idCliente";
                 $stmt = $this->conn->prepare($sql);
@@ -142,7 +142,7 @@
             //var_dump($blob);
         }
 
-        public function getFoto($idCliente) {
+        public function getFotoCliente($idCliente) {
             try {
                 $sql = "select foto from tblcliente where idCliente = :idCliente";
                 $stmt = $this->conn->prepare($sql);

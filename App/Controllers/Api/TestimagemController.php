@@ -37,8 +37,8 @@
             
             
             $clienteDAO = new ClienteDAO();
-            $clienteDAO->setFoto($data, 2);
-            $foto = $clienteDAO->getFoto(2);
+            $clienteDAO->setFotoCliente($data, 2);
+            $foto = $clienteDAO->getFotoCliente(2);
 
             echo $foto;
 
