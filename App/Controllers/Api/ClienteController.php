@@ -20,12 +20,13 @@
                 if(count($url) > 2) {
                     $id = $url[2];
                     $data = $clienteDAO->getCliente($id);
-                    unset($data[2]);
-                    echo"<pre>";
-                    var_dump($data);
-                    //$this->addParameter("success", $data["success"]);
-                    //$this->addParameter("cliente", $data["cliente"]);
-                    //$this->render("api/cliente");
+                    unset($data["cliente"]["Foto"]);
+                    //echo"<pre>";
+                    //var_dump($data);
+                    //echo json_encode($data["cliente"]);
+                    $this->addParameter("success", $data["success"]);
+                    $this->addParameter("cliente", $data["cliente"]);
+                    $this->render("api/cliente");
                 } else {
                     $data = $clienteDAO->getAllClientes();
                     unset($data["Foto"]);
