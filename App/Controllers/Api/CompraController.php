@@ -24,12 +24,15 @@
                 $idCupom = $dados->idCupom;
                 $ingressosArr = $dados->ingressos;
                 
+                //var_dump($ingressosArr);
+                
                 $ingressos = array();
                 for ($i = 0; $i < count($ingressosArr); $i++) {
                     $ingresso = new Ingresso();
                     $ingresso->setIdTipoIngresso($ingressosArr[$i]->tipo);
                     $ingresso->setDataInicio($ingressosArr[$i]->dataInicio);
                     $ingresso->setDataValidade($ingressosArr[$i]->dataValidade);
+                    $ingresso->setMeia($ingressosArr[$i]->meia);
                     //var_dump($ingresso);
                     array_push($ingressos, $ingresso);
                 }

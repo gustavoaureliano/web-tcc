@@ -77,11 +77,16 @@
                 if ($idPedido > 0) {
                     $ingressosSent = 0;
                     for ($i = 0; $i < count($ingressos); $i++) {
-                        $queryIngresso = "insert into tblingresso (idCliente, idStatusIngresso, idPedido, idTipoIngresso, DataEmissao, meia, DataInicio, DataValidade) values (:idCliente, 1, :idPedido, :ingresso, CURDATE(), false, :dataInicio, :dataValidade)";
+                        $queryIngresso = "insert into tblingresso (idCliente, idStatusIngresso, idPedido, idTipoIngresso, DataEmissao, meia, DataInicio, DataValidade) values (:idCliente, 1, :idPedido, :ingresso, CURDATE(), :meia, :dataInicio, :dataValidade)";
                         $stmt2 = $this->conn->prepare($queryIngresso);
                         $stmt2->bindValue(':idCliente', $idCliente);
                         $stmt2->bindValue(':idPedido', $idPedido);
                         $stmt2->bindValue(':ingresso', $ingressos[$i]->getIdTipoIngresso());
+                        if($ingressos[$i]->isMeia()) {
+                            $stmt2->bindValue(':meia', 1);
+                        } else {
+                            $stmt2->bindValue(':meia', 0);
+                        }
                         $stmt2->bindValue(':dataInicio', $ingressos[$i]->getDataInicio());
                         $stmt2->bindValue(':dataValidade', $ingressos[$i]->getDataValidade());
                         $stmt2->execute();
