@@ -16,7 +16,7 @@
         }
 
         public function getIdCupom() {
-            return $this->idCliente;
+            return $this->idCupom;
         }
 
         public function setIdCupom($idCupom) {

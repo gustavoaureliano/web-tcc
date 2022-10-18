@@ -62,15 +62,53 @@
             return $retorno;
         }
 
+        public function getAllTiposIngresso() {
+            $sql = 'select * from tbltipoingresso';
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute();
+
+            $success = $stmt->rowCount() > 0;
+            
+            if ($success) {
+                $retorno = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            } else {
+                $retorno = array();
+            }
+
+            return $retorno;
+        }
+
+        public function getTipoIngresso($id) {
+            $sql = 'select * from tbltipoingresso where idTipoIngresso = :id';
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindValue(':id', $id);
+            $stmt->execute();
+
+            $success = $stmt->rowCount() > 0;
+            
+            if ($success) {
+                $retorno = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            } else {
+                $retorno = array();
+            }
+
+            return $retorno;
+        }
+
         public function comprarIngresso($pedido) {
 
             $idCliente = $pedido->getIdCliente();
             $idCupom = $pedido->getIdCupom();
             $ingressos = $pedido->getIngressos();
             if  ($idCliente && $ingressos) {
-                $queryPedido = "insert into tblpedido (idCliente, idStatusPedido, DataPedido, DataValidacao) values (:idCliente, 1, CURDATE(), CURDATE())";
+                $queryPedido = "insert into tblpedido (idCliente, idCupom, idStatusPedido, DataPedido, DataValidacao) values (:idCliente, :idCupom, 1, CURDATE(), CURDATE())";
                 $stmt = $this->conn->prepare($queryPedido);
                 $stmt->bindValue(':idCliente', $idCliente);
+                if ($idCupom > 0) {
+                    $stmt->bindValue(':idCupom', $idCupom);
+                } else {
+                    $stmt->bindValue(':idCupom', null);
+                }
                 $stmt->execute();
                 $idPedido = $this->conn->lastInsertId(); //pegar o ultimo idinserido a partir dessa conexao
                 //echo $idPedido;
