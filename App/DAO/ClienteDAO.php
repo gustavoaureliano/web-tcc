@@ -140,6 +140,7 @@
             //var_dump(implode(' ', $foto));
             //$blob = fopen($foto, 'rb');
             //var_dump($blob);
+            return 1;
         }
 
         public function getFotoCliente($idCliente) {
