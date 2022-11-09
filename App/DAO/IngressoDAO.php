@@ -27,6 +27,24 @@
             return $retorno;
         }
 
+        public function checkIngresso($id) {
+
+            $sql = "CALL usp_checkIngresso(:id);";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindValue(':id', $id);
+            $stmt->execute();
+
+            $success = $stmt->rowCount() > 0;
+            
+            if ($success) {
+                $retorno = $stmt->fetch(\PDO::FETCH_ASSOC);
+            } else {
+                $retorno = array("id" => -1);
+            }
+
+            return (int) $retorno["id"];
+        }
+
         public function getIngressoCliente($id) {
 
             $sql = 'select * from tblingresso as i join tbltipoingresso as t where t.idTipoIngresso = i.idTipoIngresso and idCliente = :id';
