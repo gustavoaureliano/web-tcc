@@ -44,4 +44,21 @@
             return $retorno;
         }
 
+        public function getFotoAtracao($idAtracao) {
+            try {
+                $sql = "select foto from tblatracao where idAtracao = :idAtracao";
+                $stmt = $this->conn->prepare($sql);
+                $stmt->bindParam(":idAtracao", $idAtracao);
+                $stmt->execute();
+                if ($stmt->rowCount() > 0) {
+                    $retorno = $stmt->fetch(\PDO::FETCH_ASSOC);
+                } else {
+                    $retorno = "";
+                }
+            } catch(\PDOException $e) {
+                //echo "Connection failed: " . $e->getMessage();
+            }
+            return $retorno['foto'];
+        }
+
     }
