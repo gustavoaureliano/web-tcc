@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caixa-logo, .caixa-logo-pag{
+    width: 205px;
+    height: 87px;
+    margin: 42px auto;
+    margin-bottom: 85px;
+    /* margin-bottom: 76px; */
+    /* background-color: lemonchiffon; */
+}
+
+.caixa-logo-pag{
+    margin: 24px auto;
+    margin-bottom: 84px;
+}
+
+.caixa-logo img, .caixa-logo-pag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caixa-grande{
+    width: 78%;
+    max-width: 1080px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 40px;
+    /* background-color: brown; */
+}
+
+.caixa{
+    flex: 1;
+    /* min-height: 400px;
+    max-height: 500px; */
+    /* background-color: orange; */
+    /* border: 2px solid #5808b5; */
+    border: 2px solid #101010;
+    border-radius: 24px;
+    padding: 15px;
+    padding-bottom: 50px;
+}
+.caixa:first-child{
+    flex: 0.74;
+}
+.caixa-grande a{
+    text-decoration: none;
+    color: black;
+}
+
+.caixa h2{
+    font-size: 29px;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 37px;
+}
+
+.caixa-imagem, .caixa-imagem2, .caixa-imagem3{
+    width: 65.5%;
+    height: 55.7%;
+    margin: 0 auto;
+    padding: 0px;
+    /* background-color: green; */
+}
+
+.caixa-imagem2{
+    height: 60%;
+    /* background-color: green; */
+}
+
+.caixa-imagem3{
+    border: 1.5px solid black;
+    border-radius: 8px;
+}
+
+
+.caixa-imagem img, .caixa-imagem2 img, .caixa-imagem3 img{
+    width: 100%;
+    height: 100%;
+    /* min-height: 40%; */
+    /* max-height: 110px; */
+    margin: 0 auto;
+    /* background-color: palegreen; */
+}
+
+.div-carrinho-voltar{
+    width: 54px;
+    height: auto;
+    background-color: #007d0c;
+    margin: 62px auto;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.div-carrinho-voltar a {
+    font-size: 18.6px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 1120px){
+    .caixa-grande{
+        width: 87%;
+        max-width: 1080px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 40px;
+        /* background-color: brown; */
+    }
+}
+
+@media screen and (max-width: 930px){
+    .caixa-grande{
+        width: 66%;
+        /* max-width: 1080px; */
+        /* height: auto; */
+        height: 1180px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 110px;
+        gap: 54px;
+        /* background-color: greenyellow; */
+    }
+
+    .caixa{
+        height: 300px;
+        flex: .1;
+        border-radius: 24px;
+        padding: 15px;
+        padding-bottom: 40px;
+    }
+
+    .caixa:first-child{
+        flex: 0.63;
+    }
+
+    .caixa-imagem, .caixa-imagem2, .caixa-imagem3{
+        width: 300px;
+        height: 210px;
+        /* background-color: green; */
+    }
+
+    .caixa-imagem2{
+        width: 260px;
+        height: 210px;
+        /* background-color: royalblue; */
+    }
+}
+
+
+
+@media screen and (max-width: 810px){
+    .caixa-grande{
+        width: 88%;
+        /* max-width: 1080px; */
+        /* height: auto; */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 110px;
+        gap: 54px;
+        /* background-color: gold; */
+    }
+
+    .caixa{
+        height: 300px;
+        flex: .1;
+        border-radius: 24px;
+        padding: 15px;
+        padding-bottom: 34px;
+    }
+
+    .caixa:first-child{
+        flex: 0.62;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    .caixa-grande{
+        width: 100%;
+        /* max-width: 1080px; */
+        /* height: auto; */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 110px;
+        gap: 54px;
+        /* background-color: oldlace; */
+    }
+
+    .caixa{
+        height: 300px;
+        flex: .1;
+        border-radius: 24px;
+        padding: 15px;
+        padding-bottom: 35px;
+    }
+
+    .caixa:first-child{
+        flex: 0.62;
+    }
+
+    .caixa-imagem, .caixa-imagem2, .caixa-imagem3{
+        width: 57%;
+        height: 56.5%;
+        /* background-color: green; */
+    }
+
+    .caixa-imagem2{
+        width: 51%;
+        height: 45%;
+        /* background-color: royalblue; */
+    }
+}

@@ -1,0 +1,813 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+.divgrande1, .divgrande2{
+    height: 650px;
+    width: 70%;
+    max-width: 1060px;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.divgrande2{
+    width: 69.8%;
+    height: 800px;
+    margin-top: 25px;
+    /* background-color: olivedrab; */
+}
+
+.img-cadas{
+    height: 638px;
+    width: 455px;
+    /* background-image: url("teste.jpg"); */
+    /* clip-path: polygon(92% 0, 100% 8%, 100% 92%, 92% 100%, 0 99%, 0% 60%, 0 0); */
+    display: inline-block;
+    /* background-color: #0ea11d; */
+}
+.img-cadas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info, .faixa, .faixa2, .info2{
+    width: 380px;
+    height: auto;
+    /* background-color: rosybrown; */
+    float: right;
+    margin: 18px;
+}
+
+.info2{
+    width: 374px;
+    height: auto;
+    /* background-color: burlywood; */
+    margin-top: 14px;
+}
+
+.faixa, .faixa2{
+    width: 44%;
+    height: 610px;
+    /* background-color: blueviolet; */
+    border-radius: 0px;
+    border-left: 2px solid black;
+}
+
+.faixa2{
+    width: 44.72%;
+    height: auto;
+    margin-top: 8px;
+    /* background-color: aliceblue; */
+}
+
+.info h2, .info2 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    text-align: center;
+    padding-top: 22px;
+    font-weight: bold;
+}
+
+.info p, .info2 p{
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+
+.logotipo{
+    width: 200px;
+    height: 90px;
+    /* background-color: olive; */
+    margin-top: 0px;
+}
+.logotipo img{
+    width: 100%;
+    height: 90px;
+}
+
+.formCad{
+    height: 475px;
+    width: 356px;
+    /* background-color: royalblue; */
+}
+
+.formLog{
+    height: 345px;
+    width: 335px;
+    /* background-color: blueviolet; */
+}
+
+#inputNome, #inputcpf, #senha-cadas, #senha, input[type=date], input[type=email], input[type=text]{
+    width: 310px;
+    height: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 15.5px;
+}
+
+#inputNome, #senha-cadas, #email-cadas{
+    width: 330px;
+}
+
+.input-nome, .input-email2, .input-senha2{
+    width: 100%;
+    height: 78px;
+    /* background-color: #8789E5; */
+}
+.input-nome{
+    margin-top: 12px;
+}
+#inputcpf{
+    width: 110px;
+}
+
+input[type=date]{
+    width: 120px;
+    height: 30px;
+    font-family: 'Helvetica';
+    font-size: 15.5px;
+}
+
+#senha{
+    width: 260px;
+    float: left;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+input[type=submit]{
+    width: 155px;
+    height: 44px;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #007d0c;
+    color: white;
+}
+input[type=submit]:hover{
+    background-color: #0ea11d;
+    transition: all 0.3s;
+}
+
+.input-email{
+    width: 100%;
+    height: 78px;
+    /* background-color: #8789E5; */
+    text-align: left;
+    margin-top: 24px;
+    display: block;
+}
+
+.input-senha{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 15px;
+    display: block;
+    /* background-color: blue; */
+}
+
+.input-email2, .input-senha2{
+    width: 100%;
+    height: 78px;
+    /* border: 1px solid black; */
+    margin-top: 7px;
+}
+
+.input-cpf-nasc{
+    width: 86%;
+    height: 78px;
+    margin-top: 14px;
+    /* background-color: brown; */
+}
+.input-cpf{
+    width: 134px;
+    height: 100%;
+    /* background-color: #67008a; */
+    display: inline-block;
+}
+.input-nasc{
+    width: 146px;
+    height: 78px;
+    /* background-color: yellowgreen; */
+    float: right;
+    
+}
+
+.cima{
+    height: auto;
+    width: 100%;
+    border: 0.7px solid black;
+    border-radius: 4px;
+}
+
+.esconde{
+    width: 100%;
+    height: 36px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.esconde img{
+    cursor: pointer;
+}
+.input-senha img{
+    margin: 4px;
+    margin-top: 8px;
+}
+.titinput, .titinput2{
+    width: 100%;
+    height:25px;
+    /* background-color: purple; */
+    padding-bottom: 17px;
+}
+
+.titinput{
+    height:10px;
+    padding-bottom: 30px;
+    /* background-color: gold; */
+}
+
+.titinput h2, .titinput2 h2{
+    font-size: 20px;
+    font-family: 'Lato';
+    font-weight: 100;
+    line-height: 0px;
+    text-align: left;
+}
+
+.input-btn{
+    width: 266px;
+    height: auto;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 52px;
+    line-height: 30px;
+    
+}
+
+.cad-link{
+    text-decoration: none;
+    font-family: Helvetica;
+    display: inline-block;
+    /* background-color: red; */
+}
+
+.cadas-login p{
+    color: black;
+    font-size: 17px;
+    font-family: Helvetica;
+    display: inline-block;
+    /* background-color: red; */
+}
+.cadas-login a p{
+    font-size: 16px;
+    color: #67008a;
+}
+
+.cadas-login{
+    width: 100%;
+    height: auto;
+    /* background-color: purple; */
+    
+}
+
+input[type=checkbox] {
+    width: 19px;
+    height: 19px;
+    outline: none;
+    border-radius: 4px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-left: 0px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.input-lembrar{
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    /* background-color: cadetblue; */
+}
+
+.esq-senha{
+    width: 130px;
+    height: auto;
+    /* background-color: navy; */
+    margin-right: 0px;
+}
+.esq-senha .esq-senha-link{
+    text-decoration: none;
+}
+.esq-senha .esq-senha-link p{
+    text-decoration: none;
+    font-family:'Helvetica';
+    color: #5f615f;
+    font-size: 14.6px;
+}
+
+.efeito-lembrar{
+    width: 100%;
+    height: 35px;
+    /* background-color: green; */
+    padding-top: 5px;
+    margin-left: 0px;
+}
+
+.lembrar{
+    width: 167px;
+    height: 28px;
+    /* background-color: olivedrab; */
+    padding-top: 2px;
+    margin-left: 0px;
+    float: left;
+}
+
+.efeito-lembrar  span{
+    font-size: 15px;
+    font-family: Helvetica;
+    padding-left: 6.4px;
+}
+
+.efeito-lembrar  a{
+    font-size: 13px;
+    font-family: Helvetica;
+}
+
+.caixa-lembrar{
+    width: 60px;
+    height: 20px;
+    /* background-color: brown; */
+}
+
+.switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.switch .switch-wrapper {
+    display: inline-block;
+    width: 50px;
+    height: 26.4px;
+    position: relative;
+}
+.switch .switch-wrapper .switch-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #1E1F66;
+}
+
+.switch .switch-wrapper input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch .switch-wrapper .switch-button::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 3.2px;
+    bottom: 3px;
+    top: 3.3px;
+    border-radius: 50%;
+    transition: .4s all ease;
+    background-color: #8789E5;
+} 
+
+/* .switch .switch-wrapper input:checked + .switch-button{
+    background-color: #2f309c;
+} */
+.switch .switch-wrapper input:checked + .switch-button::before{
+    transform: translateX(23px);
+}
+
+
+.img-cadas-mobile{
+    display: none;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	border-left: 1.55px solid #999999;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #999999;
+	border-radius: 2px;
+}
+	
+::-webkit-scrollbar-thumb:hover{
+	background-color: #a3a3a3;
+}
+
+
+@media screen and (max-width: 1400px){
+    .divgrande1, .divgrande2{
+        width: 78%;
+        height: 640px;
+        /* background-color: goldenrod; */
+        transition: all 1.7s;
+    }
+    .faixa, .faixa2{
+        width: 44.62%;
+    }
+    .faixa2{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1202px){
+    .divgrande1, .divgrande2{
+        width: 82.3%;
+        /* background-color: blueviolet; */
+        transition: all 1.5s;
+        margin-top: 20px;
+    }
+
+    .img-cadas{
+        height: 100%;
+        width: 405px;
+        /* background-color: green; */
+    }
+
+    .info, .info2{
+        height: 570px;
+        /* background-color: burlywood; */
+        display: inline-block;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    .info2{
+        margin-left: 40px;
+        height: auto;
+    }
+
+    .faixa, .faixa2{
+        width: 47%;
+        height: 596px;
+        /* background-color: aquamarine; */
+        border-radius: 0px;
+        border-left: 2px solid black;
+    }
+    .faixa2{
+        width: 47.15%;
+        height: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 1100px){
+    .divgrande1, .divgrande2{
+        width: 100%;
+        height: 635px;
+        /* background-color: orange; */
+        transition: all 1.5s;
+        margin-top: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .img-cadas{
+        height: 100%;
+        width: 432px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        /* background-color: green; */
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .info, .info2{
+        /* margin-right: 35px; */
+        margin-top: 15px;
+    }
+    .info2{
+        margin-right: 40px;
+        margin-left: 10px;
+    }
+    .faixa, .faixa2{
+        border: none;
+        /* background-color: #67008a; */
+    }
+    .faixa{
+        width: auto;
+        margin-right: 58px;
+    }
+    .faixa2{
+        width: auto;
+        margin-right: 55px;
+    }
+    
+}
+
+@media screen and (max-width: 950px){
+    .divgrande1, .divgrande2{
+        width: 100%;
+        height: 635px;
+        /* background-color: red; */
+        transition: all 1.5s;
+        margin-top: 0;
+    }
+
+    .faixa, .faixa2{
+        width: 418px;
+        height: 610px;
+        border: none;
+        margin: 13px auto;
+        margin-right: 4px;
+    }
+    .faixa{
+        width: 386px;
+        margin-right: 38px;
+    }
+
+    .info{
+        width: 358px;
+        height: 596px;
+        margin-right: none;
+        margin-top: none;
+        /* background-color: #007d0c; */
+    }
+
+    .img-cadas{
+        height: 100%;
+        width: 44%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        /* background-color: green; */
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 875px) {
+    ::-webkit-scrollbar{
+    width:7px;
+    }
+}
+
+
+
+@media screen and (max-width: 776px){
+    .divgrande1, .divgrande2{
+        width: 100%;
+        height: 800px;
+        /* background-color: yellowgreen; */
+    }
+    .divgrande2{
+        height: 870px;
+    }
+    .logotipo{
+        width: 220px;
+        height: 105px;
+    }
+    .logotipo img{
+        width: 100%;
+        height: 90px;
+    }
+
+    .img-cadas{
+        display: none;
+    }
+    .img-cadas-mobile{
+        display: block;
+        height: 120px;
+        width: 100%;
+        background:yellow;
+        position: relative;
+        top: 0;
+    }
+
+    .info p, .info2 span{
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 14px;
+        padding-top: 3px;
+        padding-bottom: 0px;
+    }
+    
+    #senha, input[type=email]{
+        width: 346px;
+        height: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #senha{
+        width: 77.5%;
+        float: left;
+        border: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    
+    }
+
+    .cima{
+        height: auto;
+        width: 100%;
+        border: 0.7px solid black;
+        border-radius: 4px;
+        /* background-color: #007d0c; */
+    }
+    
+    .esconde{
+        width: 100%;
+        height: 36px;
+        border-radius: 4px;
+    }
+
+    .formLog{
+        height: 380px;
+        width: 370px;
+        /* background-color: blueviolet; */
+    }
+
+
+    .input-email, .input-senha{
+        width: 100%;
+        height: auto;
+        /* background-color: brown; */
+        text-align: left;
+        padding-top: 10px;
+        display: block;
+    }
+
+    .info, .info2, .faixa, .faixa2{
+        /* background-color: rosybrown; */
+        display: block;
+        float: none;
+        margin: 18px;
+    }
+
+    .info, .info2{
+        width: 100%;
+        height: 610px;
+        margin: 0;
+    }
+    .info2{
+        height: auto;
+    }
+    .faixa, .faixa2{
+        width: 420px;
+        height: auto;
+        /* background-color: aquamarine; */
+        border-radius: 0px;
+        border-left: none;
+        margin: 0 auto;
+        margin-top: 25px;
+        transition: all 1.8s;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .divgrande1, .divgrande2{
+        width: 100%;
+        height: 800px;
+        /* background-color: royalblue; */
+    }
+    .divgrande2{
+        height: 940px;
+    }
+
+    .img-cadas{
+        display: none;
+    }
+    .img-cadas-mobile{
+        display: block;
+        height: 110px;
+        width: 100%;
+        background:yellow;
+        position: relative;
+        top: 0;
+    }
+    
+    #senha, input[type=email], #inputNome, #senha-cadas, #email-cadas, #inputcpf, input[type=date]{
+        width: 93.7%;
+        height: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #senha{
+        width: 78.5%;
+        float: left;
+        border: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    
+    }
+
+    .cima{
+        height: auto;
+        width: 100%;
+        border: 0.7px solid black;
+        border-radius: 4px;
+        /* background-color: #007d0c; */
+    }
+    
+    .esconde{
+        width: 100%;
+        height: 36px;
+        border-radius: 4px;
+    }
+
+    .input-cpf-nasc{
+        width: 100%;
+        height: 160px;
+        margin-top: 8px;
+        /* background-color: brown; */
+    }
+    .input-cpf{
+        width: 100%;
+        height: 78px;
+        /* background-color: #67008a; */
+        display: block;
+    }
+    .input-nasc{
+        width: 100%;
+        margin-top: 7.5px;
+    }
+
+    .input-btn{
+        margin-top: 67px;
+    }
+    .formLog{
+        height: 380px;
+        width: 88%;
+        /* background-color: blueviolet; */
+    }
+
+    .formCad{
+        height: 380px;
+        width: 88%;
+        /* background-color: red; */
+    }
+
+
+    .input-email, .input-senha{
+        width: 100%;
+        height: auto;
+        /* background-color: brown; */
+        text-align: left;
+        padding-top: 20px;
+        display: block;
+    }
+    .info, .faixa, .faixa2{
+        width: 100%;
+        /* background-color: rosybrown; */
+        display: block;
+        float: none;
+        margin: 18px;
+    }
+
+    .info, .info2{
+        width: 100%;
+        height: 510px;
+        margin: 0;
+        /* background-color: red; */
+    }
+    .info2{
+        height: 650px;
+        /* background-color: rosybrown; */
+    }
+
+    .faixa, .faixa2{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 22px;
+        /* background-color: rosybrown; */
+    }
+}

@@ -11,6 +11,7 @@
         private $meia = false;
         private $dataInicio = "";
         private $dataValidade = "";
+        private $foto = null;
 
         public function getIdIngresso() {
             return $this->idIngresso;
@@ -76,4 +77,13 @@
             $this->dataValidade = $dataValidade;
         }
 
+        public function getFoto() {
+            return $this->foto;
+        }
+
+        public function setFoto($foto) {
+            $this->foto = $foto;
+        }
+
     }
+?>

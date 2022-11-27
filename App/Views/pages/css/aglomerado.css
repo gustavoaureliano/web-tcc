@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+}
+
+.scrollTop{
+    outline: none;
+    border-radius: 30px;
+    width: 46px;
+    height: 46px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    border: none;
+  }
+  
+  .scrollTop.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+/* Dúvidas Frequentes */
+.divPrincipal-duvi{
+    width: 84%;
+    height: auto;
+    /* background-color: navy; */
+    margin: 0 auto;
+    margin-top: 59px;
+    margin-bottom: 98px;
+}
+.tit-principal{
+    width: 100%;
+    height: auto;
+    /* background-color: firebrick; */
+}
+
+.tit-principal h1{
+    font-size: 32px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 12px;
+}
+
+.div-caixa-central{
+    width: 78%;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+
+.divSugest{
+    width: 78%;
+    height: 534px;
+    margin: 0 auto;
+    border-radius: 36px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #7800e0;                                                                                   
+}
+
+.divSugest h1{
+    font-size: 30px;
+    font-family: 'Lato';
+    text-align: center;
+    padding-bottom: 32px;
+    padding: 26px;
+    color: white;
+}
+
+input[type=email], input[type=text]{
+    height: 38px;
+    outline: none;
+    border: 1.5px solid #dbdbdb;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 17px;
+    font-family: 'Helvetica';
+    border-radius: 4px;
+}
+
+input[type=email]{
+    width: 83%;
+}
+input[type=text]{
+    width: 100%;
+}
+
+.div-grande{
+    width: auto;
+    height: auto;
+    padding-bottom: 0px;
+    margin: 32px;
+    margin-bottom: 84px;
+    /* background-color: darkcyan; */
+}
+
+.divMsg{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 36px;
+    /* background-color: blueviolet; */
+}
+
+textarea{
+    width: 97%;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 17px;
+    font-family: 'Helvetica';
+}
+
+input[type=submit]{
+    outline: none;
+    width: 118px;
+    height: 49px;
+    display: block;
+    margin: 48px auto;
+    border-radius: 6px;
+    border: 2.5px solid #01760c;
+    background-color: #007d0c;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16.4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #0ea11d;
+    border: 2.5px solid #0ea11d;
+    transition: all 0.3s;
+}
+
+.divEmail-nome{
+    width: 88%;
+    max-width: 1100px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    /* background-color: yellowgreen; */
+}
+
+.input-email{
+    height: 83px;
+    /* background-color: #8789E5; */
+    text-align: left;
+    flex: 1.15;
+}
+
+.input-nome{
+    height: 83px;
+    /* background-color: royalblue; */
+    text-align: left;
+    flex: 0.85;
+    padding-right: 22px;
+}
+.titinput{
+    width: 100%;
+    height:36px;
+    /* background-color: green; */
+    flex: 1;
+    /* padding-bottom: 2px; */
+}
+
+
+.titinput h2{
+    font-size: 20px;
+    font-family: 'Lato';
+    font-weight: 100;
+    line-height: 38px;
+    text-align: left;
+
+    color: white;
+}
+
+.caixa1, .caixa2, .caixa3{
+    width: 100%;
+    height: auto;
+    /* background-color: grey; */
+    padding: 25px;
+}
+
+
+.caixa-texto{
+    width: 100%;
+    height: auto;
+    /* background-color: orangered; */
+    display: none;
+}
+
+
+
+
+.container {
+    width: 74%;
+    margin: 0px auto;
+}
+  
+  /* Acordion Styles */
+
+  .accordion-item{
+    border-radius: 10px;
+    margin-bottom: 42px;
+  }
+  
+  .accordion-item h3 {
+    background-color: #eee;
+    padding: 15px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    margin: 0;
+  }
+  
+  .accordion-item h3{
+    border-radius: 10px 10px 0 0;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 24px;
+  }
+  
+  /* .accordion-item.open:last-child h3 {
+    border-radius: 0;
+  } */
+  .accordion-item h3::after {
+    content: "∧";
+    float: right;
+    transition: 1s all;
+  }
+  
+  .accordion-item p {
+    margin: 0;
+    display: block;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.6s;
+  }
+  
+  .accordion-item.open p {
+    padding: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: 'Lato';
+    font-size: 17.5px;
+    line-height: 24px;
+    text-align: justify;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .accordion-item.open:last-child p {
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .accordion-item.open h3::after {
+    content: "∨";
+    transition: 1s all;
+  }
+
+
+
+
+@media only screen and (max-width: 994px){ 
+    /* .divPrincipal-duvi{
+        background-color: red;
+    } */
+    .container {
+        width: 89%;
+    }
+    textarea{
+        width: 95%;
+    }
+    .divEmail-nome{
+        width: 100%;
+    }
+    .divSugest{
+        width: 85%;;
+    }
+    .divMsg{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 642px){ 
+    /* .divPrincipal-duvi{
+        background-color: purple;
+    } */
+    .divSugest{
+        width: 100%;;
+    }
+    textarea{
+        width: 96%;
+    }
+}
+
+
+
+
+
+/* Mapa Interativo */
+.titPrinc{
+    width: auto;
+    text-align: center;
+    font-family: 'Lato';
+    padding: 37px;
+    padding-top: 72px;
+}
+.mapaint{
+    width: 100%;
+    height: 90vh;
+    background-color: brown;
+}
+
+.image-bottom{
+    width: 1200px;
+    height: 25vh;
+    background-color: lightgreen;
+    margin: 38px auto;
+    margin-bottom: 78px;
+}
+

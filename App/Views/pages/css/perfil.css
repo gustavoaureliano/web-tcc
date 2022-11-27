@@ -1,0 +1,274 @@
+.div-grande-perfil{
+    width: 75%;
+    height: auto;
+    background-color: #ebebeb;
+    margin: 62px auto;
+    margin-bottom: 92px;
+    display: flex;
+    flex-direction: row;
+    padding: 18px;
+    gap: 19.5px;
+    border-radius: 2px;
+}
+.div-esquerda{
+    flex: 0.60;
+    border-radius: 7px;
+    background-color: #f5f5f5;
+}
+
+.div-tit{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* background-color: cadetblue; */
+    font-size: 24.5px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 18px;
+}
+.div-btn-perfil{
+    width: 194px;
+    height: auto;
+    margin: 0 auto;
+    padding: 13px;
+    /* background-color: red; */
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.div-btn-perfil label, .btnSalvar{
+    padding: 14px 24px 14px 24px;
+    font-family: "Montserrat";
+    font-size: 16.5px;
+    border-radius: 9px;
+    /* margin: 0px auto; */
+    background-color: #7800e0;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.btnSalvar{
+    width: 190px;
+    height: 44px;
+    margin-top: 36px;
+    border-radius: 9px;
+    padding: 5px;
+    border: none;
+}
+
+.caixa-imagem{
+    width: 304px;
+    height: 292px;
+    border-radius: 190px;
+    margin: 10px auto;
+    margin-bottom: 48px;
+    /* background-color: brown; */
+}
+.caixa-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 190px;
+}
+
+.div-direita{
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+}
+
+.formPerfil{
+    width: 60.5%;
+    height: auto;
+    margin:  28px auto;
+    margin-bottom: 46px;
+    /* background-color: palevioletred; */
+}
+
+#txtNome, #txtEmail, #txtSenha, #txtCpf{
+    width: 100%;
+    height: 34px;
+    border-radius: 4px;
+    padding: 7px;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 16.5px;
+    outline: none;
+    border: 1px solid #dad9d9;
+}
+
+.div-nome, .div-senha, .div-email, .div-cpf{
+    width: 88%;
+    /* background-color: purple; */
+    padding-right: 22px;
+    margin: 0 auto;
+}
+.div-senha, .div-email, .div-cpf{
+    margin-top: 17px;
+}
+/* .div-nome, .div-senha{
+}
+.div-email, .div-cpf{
+} */
+
+.div-email, .div-senha, .div-cpf{
+    padding-top: 15px;
+}
+.div-nome h2, .div-email h2, .div-senha h2, .div-cpf h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21.5px;
+    padding-bottom: 6px;
+}
+
+.div-aviso{
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    font-family: 'Lato';
+    font-size: 17.8px;
+    text-align: center;
+    /* background-color: #23471f; */
+}
+
+
+.div-btn{
+    width: auto;
+    height: auto;
+    padding-top: 42px;
+    /* background-color: cadetblue; */
+}
+.div-btn-dentro{
+    width: 348px;
+    height:auto;
+    padding: 0px;
+    margin: 0px auto;
+    /* background-color: red; */
+}
+
+.btnVoltar, .btnAtualizar{
+    width: 120px;
+    height: 42px;
+    border:none ;
+    outline: none;
+    font-family: "Montserrat";
+    font-size: 16px;
+    border-radius: 7px;
+    position: relative;
+    margin: 12px;
+    background-color: #23471f;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.btnAtualizar{
+    width: 170px;
+}
+.btnVoltar{
+    text-decoration: none;
+    padding: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 18px;
+}
+
+.btnVoltar:hover, .btnAtualizar:hover{
+  background-color: #0ea11d;
+  transition: all 0.3s;
+}
+
+
+
+/* .scrollTop{
+    outline: none;
+    border-radius: 30px;
+    width: 46px;
+    height: 46px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    border: none;
+  }
+  
+  .scrollTop.active{
+    opacity: 1;
+    visibility: visible;
+  } */
+
+
+
+  @media screen and (max-width: 1360px){
+    .div-grande-perfil{
+        width: 77%;
+        height: auto;
+        /* background-color: orange; */
+        margin: 58px auto;
+        margin-bottom: 92px;
+        display: flex;
+        padding: 18px;
+    }
+
+    .div-btn-dentro{
+        width: 263px;
+        height:auto;
+        /* background-color: red; */
+    }
+
+    .btnVoltar, .btnAtualizar{
+        width: 120px;
+        height: 42px;
+        border:none ;
+        outline: none;
+        font-family: "Montserrat";
+        font-size: 16px;
+        border-radius: 7px;
+        position: relative;
+        margin: 12px;
+        background-color: #23471f;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+    }
+  }
+
+  @media screen and (max-width: 1050px){
+    .div-grande-perfil{
+        width: 77%;
+        height: auto;
+        /* background-color: blanchedalmond; */
+        margin: 58px auto;
+        margin-bottom: 96px;
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+    }
+    .caixa-imagem{
+        width: 330px;
+        height: 320px;
+        border-radius: 190px;
+        margin: 0 auto;
+        margin-bottom: 44px;
+        background-color: brown;
+    }
+
+    .formPerfil{
+        margin-top: 58px;
+    }
+
+    .div-esquerda{
+        padding-bottom: 32px;
+    }
+  }

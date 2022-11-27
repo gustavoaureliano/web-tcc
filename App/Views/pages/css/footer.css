@@ -1,0 +1,466 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #1E1F66;
+    /* position: fixed; */
+    bottom: 0;
+    z-index: 5;
+  }
+  
+  .rodape{
+    height: 34px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 14px;
+    padding-top: 15px;
+    text-align:center;
+    background-color: #5658ce;
+    font-size: 19px;
+    color: white;
+  }
+  
+  .caixa-rodape{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      height: 32px;
+      /* background-color: palegreen; */
+  }
+  .text-rodape{
+    width: auto;
+    height: auto;
+    /* background-color: red; */
+  }
+  .text-rodape p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14.5px;
+  }
+  
+  .redes-sociais{
+      display: flex;
+      flex-direction: row;
+      width: 220px;
+      height: 32px;
+      gap: 4px;
+      position: absolute;
+      right: 7.7%;
+      /* background-color: cadetblue; */
+  }
+  
+  .rede1, .rede2, .rede3, .rede4, .rede5{
+    width: 100%;
+    /* background-color: brown; */
+  }
+  
+  .rede1 img, .rede2 img, .rede3 img, .rede4 img, .rede5 img{
+    opacity: 0.78;
+    cursor: pointer;
+  }
+  
+  .rede1 img:hover, .rede2 img:hover, .rede3 img:hover, .rede4 img:hover, .rede5 img:hover{
+    transition: 0.5s all;
+    opacity: 1;
+  }
+  
+  .icon{
+    width: 84px;
+    height: 58.2px;
+    position: absolute;
+    left: 8%;
+    bottom: 5px;
+    /* background-color: red; */
+  }
+  
+  .icon img{
+    width: 86%;
+    height: 84.5%;
+    margin-top: 7.6px;
+  }
+  
+  
+  .footer-flex{
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    height: 480px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    /* background-color: cadetblue; */
+    margin: 0 auto;
+    gap: 32px;
+  }
+
+  .divgrande-pai{
+    display: flex;
+    /* flex-direction: row; */
+    width: 68.5%;
+    height: auto;
+    gap: 32px;
+    /* background-color: crimson; */
+  }
+  
+  .divgrande1{
+    flex: 1.2;
+    width: 35%;
+    flex-direction: column;
+    /* background-color: teal; */
+  }
+  
+  .sobre-empresa{
+    flex-grow: auto;
+    padding-bottom: 6px;
+    /* background-color: ghostwhite; */
+  }
+
+  .sobre-empresa p{
+    line-height: 24.3px;
+    font-size: 15.6px;
+    font-family: 'Helvetica';
+    color: white;
+  }
+            
+  .gif{
+    flex-grow: 1;
+    /* background-color: red; */
+  }
+
+  .gif-img{
+    width: 320px;
+    height: 158px;
+    margin: 2.375vh auto;
+    /* margin-right: 2.383vh; */
+    /* background-color: gray; */
+  }
+
+  .gif-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* object-position: center; */
+  }
+  
+  .divgrande2{
+    flex: 1;
+    width: 30%;
+    flex-direction: column;
+    /* background-color: rebeccapurple; */
+  }
+  
+  .links{
+    flex-grow: 0.2;
+    /* background-color: grey; */
+  }
+  
+  .links h3, .regras-info h3, .suporte h3, .horario-func h3, .enderec h3{
+    font-size: 19px;
+    font-family: Helvetica;
+    border-bottom: 1.6px solid #c9c3c9;
+    padding-bottom: 10.4px;
+    padding-top: 5px;
+    font-size: 19.5px;
+    font-family: 'Lato';
+    color: #c9c3c9;
+  }
+  
+  .links a, .regras-info a, .suporte a, .suporte p, .enderec p, .div-funcionamento p{
+    text-decoration: none;
+    display: block;
+    line-height: 24.5px;
+    font-size: 15px;
+    font-family: 'Helvetica';
+    color: white !important;
+  }
+  .div-funcionamento p{
+    line-height: 20.5px;
+  }
+
+  .link1{
+    padding-top: 6px;
+  }
+
+  .logo-footer{
+    width: 216px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    /* background-color: red; */
+  }
+  .logo-footer img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-princ-footer{
+    line-height: 19.2px;
+    font-size: 15.8px;
+    font-family: 'Helvetica';
+  }
+  
+  .suporte{
+    flex-grow: 0.2;
+    margin-top: 2.1vh;
+    /* background-color: yellowgreen; */
+  }
+  
+  .regras-info{
+    flex-grow: 0.4;
+    margin-top: 2.1vh;
+    /* background-color: red; */
+  }
+  
+  
+  .divgrande3{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    /* background-color: royalblue; */
+    gap: 15px;
+  }
+  
+  .horario-func{
+    flex-grow: 0.05;
+    /* background-color: firebrick; */
+  }
+  
+  .enderec{
+    flex-grow: 0.05;
+    /* background-color: gold; */
+  }
+  
+  .div-map{
+    flex-grow: 1;
+    /* background-color: yellowgreen; */
+  }
+  .map{
+    width: 64px;
+    height: 64px;
+    margin: 25px auto;
+    /* background-color: red; */
+  }
+
+  .div-funcionamento{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+  }
+  .div-funcionamento h4{
+    font-size: 16.7px;
+    font-family: 'Lato';
+    padding-bottom: 3.5px;
+    color: white;
+  }
+
+
+  
+@media only screen and (max-width: 1320px){
+  .footer-flex{
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1232px){
+
+  .footer-flex{
+    max-width: 94%;
+    gap: 25.5px;
+    /* background-color: brown; */
+  }
+}
+
+@media only screen and (max-width: 1164px){
+  footer{
+    /* background-color: burlywood; */
+    height: auto;
+  }
+
+  .footer-flex{
+    display: block;
+    max-width: 90%;
+    height: 738px;
+    /* background-color: cadetblue; */
+    margin: 0 auto;
+  }
+
+  .divgrande-pai{
+    width: 80.6%;
+    height: auto;
+    margin: 0 auto;
+    gap: 59px;
+    /* background-color: orange; */
+  }
+
+  
+  .divgrande3{
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    margin: 28px auto;
+    margin-top: 32px;
+    /* margin-bottom: 100px; */
+    gap: 35px;
+    /* background-color: red; */
+  }
+  .horario-func{
+    flex: 1.7;
+  }
+  .enderec{
+    flex: 1.6;
+  }
+  .div-map{
+    flex: 0.6;
+  }
+}
+
+@media only screen and (max-width: 980px){
+  .footer-flex{
+    height: 766px;
+    /* background-color: orange; */
+  }
+}
+
+@media only screen and (max-width: 932px){
+  .footer-flex{
+    height: 772px;
+    /* background-color: blueviolet; */
+  }
+}
+
+@media only screen and (max-width: 862px){
+  footer{
+    /* background-color: royalblue; */
+    height: auto;
+  }
+  .footer-flex{
+    display: block;
+    height: auto;
+    /* background-color: cadetblue; */
+    margin: 0 auto;
+  }
+  .divgrande-pai{
+    width: 75.5%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  
+  .divgrande3{
+    display: flex;
+    width: 75.5%;
+    margin: 32px auto;
+    margin-bottom: 12px;
+    flex-direction: column;
+  }
+  .divgrande2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+  .divgrande1, .sobre-empresa, .gif
+  {
+    display: none;
+  }
+
+  footer{
+    /* background-color: orange; */
+    height: auto;
+  }
+  .rodape{
+    height: auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 6px;
+    padding-top: 15px;
+    font-size: 19px;
+  }
+  
+  .caixa-rodape{
+      /* display: flex;
+      justify-content: space-around;
+      align-items: center; */
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 83px;
+      margin-top: 5px;
+      padding-bottom: 6px;
+      /* background-color: palegreen; */
+  }
+
+  .text-rodape p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+  
+  .redes-sociais{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 212px;
+      height: 32px;
+      gap: 6px;
+      position: relative;
+      top: 0px;
+      right: 0%;
+      margin: 0 auto;
+      /* background-color: cadetblue; */
+  }
+  
+  .rede1, .rede2, .rede3, .rede4, .rede5{
+    width: 100%;
+    /* background-color: brown; */
+  }
+  
+  .rede1 img, .rede2 img, .rede3 img, .rede4 img, .rede5 img{
+    opacity: 0.78;
+    cursor: pointer;
+  }
+  
+  .rede1 img:hover, .rede2 img:hover, .rede3 img:hover, .rede4 img:hover, .rede5 img:hover{
+    transition: 0.5s all;
+    opacity: 1;
+  }
+  
+  .icon{
+    width: 93px;
+    height: 69px;
+    position: relative;
+    margin: 0 auto;
+    left: 0%;
+    bottom: 4px;
+    background-color: teal;
+  }
+  
+  .icon img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 480px){
+  footer{
+    /* background-color: yellowgreen; */
+    height: auto;
+  }
+  .divgrande-pai{
+    width: 84%;
+  }
+  
+  .divgrande3{
+    width: 84%;
+  }
+}
