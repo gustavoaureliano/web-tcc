@@ -113,6 +113,23 @@
             return $retorno;
         }
 
+        public function getFotoTipoIngresso($idTipoIngresso) {
+            try {
+                $sql = "select foto from tblTipoIngresso where idTipoIngresso = :idTipoIngresso";
+                $stmt = $this->conn->prepare($sql);
+                $stmt->bindParam(":idTipoIngresso", $idTipoIngresso);
+                $stmt->execute();
+                if ($stmt->rowCount() > 0) {
+                    $retorno = $stmt->fetch(\PDO::FETCH_ASSOC);
+                } else {
+                    $retorno = "";
+                }
+            } catch(\PDOException $e) {
+                //echo "Connection failed: " . $e->getMessage();
+            }
+            return $retorno['foto'];
+        }
+
         public function comprarIngresso($pedido) {
 
             $idCliente = $pedido->getIdCliente();

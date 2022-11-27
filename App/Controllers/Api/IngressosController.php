@@ -19,12 +19,20 @@
             try {
                 if(count($url) > 2) {
                     $id = $url[2];
-                    $ingresso = $ingressoDAO->getIngressoCliente($id);
-                    $this->addParameter("ingressos", $ingresso);
+                    $ingressos = $ingressoDAO->getIngressoCliente($id);
+                    for ($i = 0; $i < count($ingressos); $i++) {
+                        unset($ingressos[$i]["Foto"]);
+                        //var_dump($ingressos[$i]);
+                    }
+                    $this->addParameter("ingressos", $ingressos);
                     $this->render("api/ingressos");
                 } else {
-                    $ingresso = $ingressoDAO->getAllIngressos();
-                    $this->addParameter("ingressos", $ingresso);
+                    $ingressos = $ingressoDAO->getAllIngressos();
+                    for ($i = 0; $i < count($ingressos); $i++) {
+                        unset($ingressos[$i]["Foto"]);
+                        //var_dump($ingressos[$i]);
+                    }
+                    $this->addParameter("ingressos", $ingressos);
                     $this->render("api/ingressos");
                 }
             } catch (Exception $e){

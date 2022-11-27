@@ -20,10 +20,16 @@
                 if(count($url) > 2) {
                     $id = $url[2];
                     $cupons = $cupomDAO->getCuponsCliente($id);
+                    for ($i = 0; $i < count($cupons); $i++) {
+                        unset($cupons[$i]["Foto"]);
+                    }
                     $this->addParameter("cupons", $cupons);
                     $this->render("api/cupons");
                 } else {
                     $cupons = $cupomDAO->getAllCupons();
+                    for ($i = 0; $i < count($cupons); $i++) {
+                        unset($cupons[$i]["Foto"]);
+                    }
                     $this->addParameter("cupons", $cupons);
                     $this->render("api/cupons");
                 }

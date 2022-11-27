@@ -20,11 +20,18 @@
                 if(count($url) > 2) {
                     $id = $url[2];
                     $ingresso = $ingressoDAO->getTipoIngresso($id);
+                    unset($ingresso[0]["Foto"]);
+                    //var_dump($ingresso);
                     $this->addParameter("ingressos", $ingresso);
                     $this->render("api/ingressos");
                 } else {
-                    $ingresso = $ingressoDAO->getAllTiposIngresso();
-                    $this->addParameter("ingressos", $ingresso);
+                    $ingressos = $ingressoDAO->getAllTiposIngresso();
+                    for ($i = 0; $i < count($ingressos); $i++) {
+                        unset($ingressos[$i]["Foto"]);
+                        //var_dump($ingressos[$i]);
+                    }
+                    //var_dump($ingressos);
+                    $this->addParameter("ingressos", $ingressos);
                     $this->render("api/ingressos");
                 }
             } catch (Exception $e){

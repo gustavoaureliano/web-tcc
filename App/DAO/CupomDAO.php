@@ -61,5 +61,22 @@
 
             return $retorno;
         }
+        
+        public function getFotoCupom($idCupom) {
+            try {
+                $sql = "select foto from tblCupom where idCupom = :idCupom";
+                $stmt = $this->conn->prepare($sql);
+                $stmt->bindParam(":idCupom", $idCupom);
+                $stmt->execute();
+                if ($stmt->rowCount() > 0) {
+                    $retorno = $stmt->fetch(\PDO::FETCH_ASSOC);
+                } else {
+                    $retorno = "";
+                }
+            } catch(\PDOException $e) {
+                //echo "Connection failed: " . $e->getMessage();
+            }
+            return $retorno['foto'];
+        }
 
     }
