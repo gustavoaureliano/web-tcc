@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="App/Views/pages/CSS/carrinho.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="App/Views/pages/CSS/footer.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="App/Views/pages/CSS/menuLogado.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="App/Views/pages/css/carrinho.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="App/Views/pages/css/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="App/Views/pages/css/menuLogado.css" media="screen" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title> Carrinho </title>

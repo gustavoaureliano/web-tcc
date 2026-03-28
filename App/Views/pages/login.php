@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="App/Views/pages/CSS/cadastro-login.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="App/Views/pages/css/cadastro-login.css" media="screen" />
     <title> Login - Etesp Universe</title>
 </head>
 <body>
